@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+.wrapper > h2 {
+  font-size: 6vw;
+  font-family: Lora, sans-serif;
+}

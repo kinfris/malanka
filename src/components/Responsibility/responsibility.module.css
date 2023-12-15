@@ -1,0 +1,38 @@
+.titleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
+}
+
+.titleWrapper > h3 {
+  font-weight: 400;
+  text-transform: capitalize;
+  font-family: Lora, sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  padding: 32px 0;
+}
+
+.crossIcon {
+  width: 17px;
+  height: 17px;
+  transform: rotate(90deg);
+}
+
+.skillsContainer {
+  padding: 10px 20px 10px 0;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.skills {
+  padding-left: 20px;
+  margin-top: 40px;
+}

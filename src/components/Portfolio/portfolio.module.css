@@ -1,0 +1,58 @@
+.image {
+  width: 28vw;
+  height: 28vw;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.seeMore {
+  width: 110px;
+  height: 110px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.iconWrapper {
+  width: 24px;
+  height: 24px;
+}
+
+.wrapper:hover .seeMore {
+  display: flex;
+}
+
+@media screen and (max-width: 1279px) {
+  .image {
+    width: 29vw;
+    height: 29vw;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .image {
+    width: 41vw;
+    height: 41vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .image {
+    width: 85vw;
+    height: 85vw;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .image {
+    width: 100vw;
+    height: 100vw;
+  }
+}

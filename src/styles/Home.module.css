@@ -1,0 +1,143 @@
+.face {
+  background-image: url("https://assets-global.website-files.com/64c170b0cefbfac908efdba6/64c7c2fc33ec0983555cc634_Diff-animated-bkg-poster-00001.jpg");
+  min-height: 50vh;
+  background-size: cover;
+}
+
+.dark {
+  background-color: #151619;
+  color: #fff;
+}
+
+.header {
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.hero {
+  min-height: 50vh;
+  padding: calc(12% - 25px) 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #fff;
+}
+
+.hero > h1 {
+  font-family: Lora, sans-serif;
+  font-size: 10vw;
+  font-weight: 400;
+  line-height: 1;
+  margin-left: 40px;
+}
+
+.hero > p {
+  width: 75%;
+  color: #fff;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  margin-left: 40px;
+}
+
+.work {
+  padding: 4% 5%;
+}
+
+.work > h3 {
+  font-size: 50px;
+}
+
+.portfolios_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px 0;
+  padding-top: 40px;
+}
+
+.description {
+  padding: 4% 5%;
+}
+
+.description > h3 {
+  font-size: 50px;
+  font-family: Lora, sans-serif;
+}
+
+.description > p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+}
+
+.statsContainer {
+  margin-top: 48px;
+  display: flex;
+  gap: 50px;
+}
+
+.skils {
+  padding: 4% 5%;
+}
+
+.tools {
+  padding: 4% 5%;
+}
+
+.contactUs {
+  padding: 4% 5%;
+}
+
+.contactUs > h3 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.footer {
+  padding: 4% 5%;
+}
+
+.aboutUs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: self-start;
+  gap: 50px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.link:hover {
+  color: rgba(222, 226, 230, 0.5);
+}
+
+.privacy {
+  border-top: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-top: 40px;
+}
+
+.privacy > div {
+  display: flex;
+  gap: 40px;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding-bottom: 165px;
+  }
+}
