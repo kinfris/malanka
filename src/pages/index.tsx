@@ -7,6 +7,16 @@ import { Responsibilities } from "@/components/Responsibility/Resposibilities";
 import { ContactForm } from "@/components/ContactForm/ContactForm";
 import { LinkedinIcon } from "@/components/Icons/LinkedinIcon";
 import { InstagramIcon } from "@/components/Icons/InstagramIcon";
+import { QuatesCarousel } from "@/components/QuatesCarousel/QuatesCarousel";
+import AppleLogo from "../../public/apple.svg";
+import MicrosoftLogo from "../../public/microsoft.svg";
+import NasaLogo from "../../public/nasa.svg";
+import SpacexLogo from "../../public/SpaceX.svg";
+import GoogleLogo from "../../public/google.svg";
+import UFCLogo from "../../public/UFC.svg";
+
+const ShopifyLogo =
+  "https://assets-global.website-files.com/64c170b0cefbfac908efdba6/64c3ec48ab7eee6a40039fba_Color_Black_2%201%20(traced).svg";
 
 const imageUrl =
   "https://media.licdn.com/dms/image/D4D0BAQGag15hMaklQw/company-logo_200_200/0/1692796205223/malanka_ou_logo?e=1710374400&v=beta&t=vhN5xEVRDMNqdP2jVPs1i3WCroIdnoVuHLKjaZoOFzk";
@@ -47,6 +57,53 @@ export default function Home() {
       </section>
       <section className={`${styles.skils} ${styles.dark}`}>
         <Responsibilities responsibilitiesList={responsibilities} />
+      </section>
+      <section className={`${styles.dark} ${styles.techStack}`}>
+        <h3>Mastering Tech Integration</h3>
+        <p>Bringing together the top tools for seamless site performance.</p>
+        <div className={styles.technologies}>
+          <div>
+            <Image src={ShopifyLogo} alt="" fill />
+          </div>
+          <div>
+            <Image src={ShopifyLogo} alt="" fill />
+          </div>
+          <div>
+            <Image src={ShopifyLogo} alt="" fill />
+          </div>
+          <div>
+            <Image src={ShopifyLogo} alt="" fill />
+          </div>
+          <div>
+            <Image src={ShopifyLogo} alt="" fill />
+          </div>
+          <div>
+            <Image src={ShopifyLogo} alt="" fill />
+          </div>
+        </div>
+      </section>
+      <section className={styles.ourClients}>
+        <QuatesCarousel />
+        <div className={styles.clients}>
+          <div>
+            <Image src={AppleLogo} alt="" fill />
+          </div>
+          <div>
+            <Image src={MicrosoftLogo} alt="" fill />
+          </div>
+          <div>
+            <Image src={NasaLogo} alt="" fill />
+          </div>
+          <div>
+            <Image src={SpacexLogo} alt="" fill />
+          </div>
+          <div>
+            <Image src={GoogleLogo} alt="" fill />
+          </div>
+          <div>
+            <Image src={UFCLogo} alt="" fill />
+          </div>
+        </div>
       </section>
       <section className={`${styles.contactUs} ${styles.dark}`}>
         <h3>Ready To Accelerate Your Business? Let’s Talk</h3>
