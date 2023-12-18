@@ -38,3 +38,15 @@
 .controls > img {
   cursor: pointer;
 }
+
+@media screen and (max-width: 700px) {
+  .quate {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .quate {
+    font-size: 20px;
+  }
+}

@@ -39,7 +39,7 @@ export default function Home() {
         </div>
       </section>
       <section className={`${styles.work} ${styles.dark}`}>
-        <h3>Portfolio</h3>
+        <h3 className={styles.header3}>Portfolio</h3>
         <div className={styles.portfolios_container}>
           {arr.map(({ imageUrl, name }, i) => {
             return <Portfolio key={i} imageUrl={imageUrl} name={name} />;
@@ -47,7 +47,7 @@ export default function Home() {
         </div>
       </section>
       <section className={`${styles.description} ${styles.dark}`}>
-        <h3>A Trusted Industry Leader</h3>
+        <h3 className={styles.header3}>A Trusted Industry Leader</h3>
         <p>Building the world’s top-performing stores</p>
         <div className={styles.statsContainer}>
           {stats.map(({ amount, name }, i) => {
@@ -59,7 +59,7 @@ export default function Home() {
         <Responsibilities responsibilitiesList={responsibilities} />
       </section>
       <section className={`${styles.dark} ${styles.techStack}`}>
-        <h3>Mastering Tech Integration</h3>
+        <h3 className={styles.header3}>Mastering Tech Integration</h3>
         <p>Bringing together the top tools for seamless site performance.</p>
         <div className={styles.technologies}>
           <div>
@@ -106,7 +106,9 @@ export default function Home() {
         </div>
       </section>
       <section className={`${styles.contactUs} ${styles.dark}`}>
-        <h3>Ready To Accelerate Your Business? Let’s Talk</h3>
+        <h3 className={styles.header3}>
+          Ready To Accelerate Your Business? Let’s Talk
+        </h3>
         <ContactForm />
       </section>
       <footer className={`${styles.dark} ${styles.footer}`}>
