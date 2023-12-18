@@ -9,3 +9,7 @@
 .wrapper > h2 {
   font-size: 6vw;
 }
+
+.wrapper > p {
+  text-align: center;
+}

@@ -9,7 +9,7 @@ export const Stat = ({ amount, name }: PropType) => {
   return (
     <div className={styles.wrapper}>
       <h2>{amount}</h2>
-      <div>{name}</div>
+      <p>{name}</p>
     </div>
   );
 };
