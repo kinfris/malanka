@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import { Portfolio } from "@/components/Portfolio/Portfolio";
-import { arr, responsibilities, stats } from "@/mock";
+import { arr, responsibilities, stats } from "@/mockData/mock";
 import { Stat } from "@/components/Stat/Stat";
 import { Responsibilities } from "@/components/Responsibility/Resposibilities";
 import { ContactForm } from "@/components/ContactForm/ContactForm";

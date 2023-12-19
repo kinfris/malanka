@@ -1,4 +1,4 @@
-import { ResponsibilityType } from "@/mock";
+import { ResponsibilityType } from "@/mockData/mock";
 import styles from "./responsibility.module.css";
 import { useRef, useState } from "react";
 import Accordion from "react-bootstrap/Accordion";

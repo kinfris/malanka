@@ -11,7 +11,10 @@ export const Portfolio = ({ imageUrl, name }: PropsType) => {
     <div className={styles.wrapper}>
       <div className={styles.image}>
         <Image fill src={imageUrl} alt={name} quality={100} sizes="28vw" />
-        <a href="#" className={styles.seeMore}>
+        <a
+          href={`project/${name.toLocaleLowerCase()}`}
+          className={styles.seeMore}
+        >
           <div className={styles.iconWrapper}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
               <path
