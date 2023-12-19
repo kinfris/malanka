@@ -78,6 +78,9 @@ export default function Project({ projectInfo }: Props) {
             <p className={styles.summaryInfo}>{summary.solution}</p>
           </div>
         </div>
+        <h4 className={`${styles.blockTitle} ${styles.decoredTitle}`}>
+          Performance
+        </h4>
         <div className={styles.summaryIndicators}>
           {summary.indicator.map((e, i) => {
             return (

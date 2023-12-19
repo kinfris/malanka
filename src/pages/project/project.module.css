@@ -10,9 +10,9 @@
 
 .mainImage {
   position: relative;
-  width: 100%;
+  width: 700px;
   height: 700px;
-  margin-top: 30px;
+  margin: 30px auto;
 }
 
 .solutionImage {
@@ -35,16 +35,15 @@
 
 .summary {
   margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-column-gap: 16px;
 }
 
 .summary > div {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 30%;
 }
 
 .summaryName {
@@ -58,12 +57,19 @@
 .summaryIndicators {
   margin-top: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .indicatorValue {
   font-size: 40px;
   margin-bottom: 0;
+  text-align: center;
+}
+
+.indicatorName {
+  text-align: center;
 }
 
 .blockTitle {
@@ -72,7 +78,71 @@
   margin-bottom: 10px;
 }
 
+.decoredTitle {
+  text-align: center;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 920px) {
+  .mainImage {
+    width: 400px;
+    height: 400px;
+  }
+
+  .solutionImage {
+    width: 450px;
+    height: 300px;
+  }
+
+  .maintitle {
+    font-size: 30px;
+  }
+
+  .subTitle {
+    font-size: 16px;
+  }
+
+  .summary {
+    grid-template-columns: repeat(2, auto);
+    row-gap: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainImage {
+    width: 300px;
+    height: 300px;
+  }
+
+  .solutionImage {
+    width: 350px;
+    height: 233px;
+  }
+
+  .maintitle {
+    font-size: 25px;
+  }
+
+  .summaryInfo {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 470px) {
+  .mainImage {
+    width: 250px;
+    height: 250px;
+  }
+
+  .solutionImage {
+    width: 250px;
+    height: 180px;
+  }
+
+  .maintitle {
+    font-size: 18px;
+  }
+
   .blockDescription {
     font-size: 14px;
   }
