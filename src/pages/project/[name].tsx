@@ -1,8 +1,4 @@
-import type {
-  InferGetStaticPropsType,
-  GetStaticProps,
-  GetStaticPaths,
-} from "next";
+import type { GetStaticProps, GetStaticPaths } from "next";
 import { ProjectType, projectsInfo } from "@/mockData/project";
 import { ParsedUrlQuery } from "querystring";
 import styles from "./project.module.css";
@@ -46,9 +42,7 @@ export const getStaticProps: GetStaticProps<Props, Params> = async (
   return { props: { projectInfo: project.projectDescription } };
 };
 
-export default function Project({
-  projectInfo,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function Project({ projectInfo }: Props) {
   const {
     title,
     subTitle,
