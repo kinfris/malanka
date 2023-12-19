@@ -44,7 +44,7 @@ export const getStaticProps: GetStaticProps<Props, Params> = async (
 
 export default function Project({ projectInfo }: Props) {
   const {
-    title,
+    title: title1,
     subTitle,
     summary,
     aboutCompany,
@@ -56,7 +56,7 @@ export default function Project({ projectInfo }: Props) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <h3 className={styles.maintitle}>{title}</h3>
+        <h3 className={styles.maintitle}>{title1}</h3>
         <h4 className={styles.subTitle}>{subTitle}</h4>
         <div className={styles.summary}>
           <div>
