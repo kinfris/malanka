@@ -6,7 +6,7 @@ export type ProjectType = {
     industry: string;
     enterpriseTech: string;
     solution: string;
-    indicator: Array<{ value: string; name: string }>;
+    indicators: Array<{ value: string; name: string }>;
     image: string;
   };
   aboutCompany: string[];
@@ -35,7 +35,7 @@ export const projectsInfo: ProjectInfoType[] = [
         enterpriseTech:
           "Shopify, Shopify Subscriptions, AVI Kitchen Management",
         solution: "Subscriptions",
-        indicator: [
+        indicators: [
           { value: "233%", name: "Increase in Subscribers" },
           { value: "14,000+", name: "Active Subscribers" },
           { value: "26x", name: "Revenue Growth" },
@@ -65,7 +65,7 @@ export const projectsInfo: ProjectInfoType[] = [
         ],
       },
       results: [
-        "The sophisticated self-service subscription model enabled Sakara Life to achieve explosive growth The last three years alone saw 60% year-over-year growth in subscribers, mostly from new users. ",
+        "The sophisticated self-service subscription model enabled Sakara Life to achieve explosive growth The last three years alone saw 60% year-over-year growth in subscribers, mostly from new users.",
         "Integrating new commercial kitchens on both coasts allows Sakara Life to ship overnight anywhere in America, contributing to their 233% increase in subscribers in the last seven years.",
       ],
     },

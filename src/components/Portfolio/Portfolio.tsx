@@ -12,7 +12,10 @@ export const Portfolio = ({ imageUrl, name }: PropsType) => {
       <div className={styles.image}>
         <Image fill src={imageUrl} alt={name} quality={100} sizes="28vw" />
         <a
-          href={`project/${name.toLocaleLowerCase()}`}
+          href={`project/${name
+            .toLocaleLowerCase()
+            .replace("&", "")
+            .replace(/\s+/g, "-")}`}
           className={styles.seeMore}
         >
           <div className={styles.iconWrapper}>
