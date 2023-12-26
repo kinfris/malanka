@@ -113,7 +113,7 @@ export default function Project({ project }: Props) {
           Performance
         </h4>
         <div className={styles.summaryIndicators}>
-          {sammaryIndicators.map((e, i) => {
+          {sammaryIndicators.map((e: any, i: number) => {
             return (
               <div key={i}>
                 <p className={styles.indicatorValue}>{e}</p>
@@ -131,7 +131,7 @@ export default function Project({ project }: Props) {
 
         <h2 className={styles.blockTitle}>The Company</h2>
         <div>
-          {aboutCompany.content.map((e, i) => {
+          {aboutCompany.content.map((e: any, i: number) => {
             return (
               <p key={i} className={styles.blockDescription}>
                 {e.content[0].value}
@@ -142,7 +142,7 @@ export default function Project({ project }: Props) {
 
         <h2 className={styles.blockTitle}>The Challenge</h2>
         <div>
-          {companyProblem.content.map((e, i) => {
+          {companyProblem.content.map((e: any, i: number) => {
             return (
               <p key={i} className={styles.blockDescription}>
                 {e.content[0].value}
@@ -160,7 +160,7 @@ export default function Project({ project }: Props) {
           </div>
         )}
         <div>
-          {solutionDescription.content.map((e, i) => {
+          {solutionDescription.content.map((e: any, i: number) => {
             return (
               <p key={i} className={styles.blockDescription}>
                 {e.content[0].value}
@@ -171,7 +171,7 @@ export default function Project({ project }: Props) {
 
         <h2 className={styles.blockTitle}>The Results</h2>
         <div>
-          {results.content.map((e, i) => {
+          {results.content.map((e: any, i: number) => {
             return (
               <p key={i} className={styles.blockDescription}>
                 {e.content[0].value}
