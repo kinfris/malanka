@@ -19,7 +19,7 @@ export const getStaticPaths = async () => {
 
   const res = await client.getEntries({
     content_type: "malanka",
-    select: "fields.name",
+    select: ["fields.name"],
   });
 
   const paths = res.items.map((e) => ({ params: { name: e.fields.name } }));
